@@ -27,7 +27,7 @@ public class Sale {
     private String customer;
 
     @JsonProperty("CustomerID")
-    private String customerID;
+    private String customerId;
 
     @JsonProperty("InvoiceNumber")
     private String invoiceNumber;

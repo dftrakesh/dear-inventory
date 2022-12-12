@@ -14,7 +14,7 @@ public interface ConstantCodes {
 
     String CONTENT_TYPE = "Content-type";
 
-    String CONTENT_TYPE_VALUE = "application/json;charset=UTF-8";
+    String CONTENT_TYPE_VALUE = "application/json";
 
     int MAX_ATTEMPTS = 50;
 
