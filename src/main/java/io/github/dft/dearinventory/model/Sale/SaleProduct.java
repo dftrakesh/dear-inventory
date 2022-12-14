@@ -12,7 +12,7 @@ public class SaleProduct {
     private String productId;
 
     @JsonProperty("SKU")
-    private String sKU;
+    private String sku;
 
     @JsonProperty("Name")
     private String name;

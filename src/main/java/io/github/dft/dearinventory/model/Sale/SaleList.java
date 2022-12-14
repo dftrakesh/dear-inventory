@@ -81,5 +81,5 @@ public class SaleList {
     private String creditNoteStatus;
 
     @JsonProperty("IsServiceOnlySale")
-    private boolean isServiceOnlySale;
+    private Boolean isServiceOnlySale;
 }

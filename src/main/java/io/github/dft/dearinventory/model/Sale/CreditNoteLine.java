@@ -12,7 +12,7 @@ public class CreditNoteLine {
     private String productID;
 
     @JsonProperty("SKU")
-    private String sKU;
+    private String sku;
 
     @JsonProperty("Name")
     private String name;

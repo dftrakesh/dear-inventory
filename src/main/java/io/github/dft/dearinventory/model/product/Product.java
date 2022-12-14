@@ -12,7 +12,7 @@ public class Product {
     private String id;
 
     @JsonProperty("SKU")
-    private String sKU;
+    private String sku;
 
     @JsonProperty("Name")
     private String name;
@@ -48,7 +48,7 @@ public class Product {
     private Double weight;
 
     @JsonProperty("UOM")
-    private String uOM;
+    private String uom;
 
     @JsonProperty("Barcode")
     private String barcode;
@@ -147,7 +147,7 @@ public class Product {
     private String stockLocator;
 
     @JsonProperty("COGSAccount")
-    private String cOGSAccount;
+    private String cogsAccount;
 
     @JsonProperty("RevenueAccount")
     private String revenueAccount;

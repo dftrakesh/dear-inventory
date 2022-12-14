@@ -72,7 +72,7 @@ public class Sale {
     private String note;
 
     @JsonProperty("COGSAmount")
-    private Double cOGSAmount;
+    private Double cogsAmount;
 
     @JsonProperty("CurrencyRate")
     private Double currencyRate;
