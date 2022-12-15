@@ -10,25 +10,25 @@ import java.util.List;
 public class CreditNote {
 
     @JsonProperty("CreditNoteNumber")
-    private String CreditNoteNumber;
+    private String creditNoteNumber;
 
     @JsonProperty("Memo")
-    private String Memo;
+    private String memo;
 
     @JsonProperty("Status")
     private String Status;
 
     @JsonProperty("RestockStatus")
-    private String RestockStatus;
+    private String restockStatus;
 
     @JsonProperty("CreditNoteDate")
-    private String CreditNoteDate;
+    private String creditNoteDate;
 
     @JsonProperty("Lines")
     private List<CreditNoteLine> creditNoteLines;
 
     @JsonProperty("AdditionalCharges")
-    private List<AdditionalCharges> AdditionalCharges;
+    private List<AdditionalCharges> additionalCharges;
 
     @JsonProperty("Refunds")
     private List<Refund> refunds;
@@ -37,11 +37,11 @@ public class CreditNote {
     private List<RestockLine> restock;
 
     @JsonProperty("TotalBeforeTax")
-    private Double TotalBeforeTax;
+    private Double totalBeforeTax;
 
     @JsonProperty("Tax")
-    private Double Tax;
+    private Double tax;
 
     @JsonProperty("Total")
-    private Double Total;
+    private Double total;
 }

@@ -13,5 +13,5 @@ public class Pack {
     private String status;
 
     @JsonProperty("Lines")
-    private List<PackLine> lines;
+    private List<PackLine> packLineList;
 }

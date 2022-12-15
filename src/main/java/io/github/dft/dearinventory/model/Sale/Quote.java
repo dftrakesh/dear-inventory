@@ -22,14 +22,14 @@ public class Quote {
     private List<QuoteLine> quoteLines;
 
     @JsonProperty("AdditionalCharges")
-    private List<AdditionalCharges> additionalCharges;
+    private List<AdditionalCharges> additionalChargesList;
 
     @JsonProperty("TotalBeforeTax")
-    private float totalBeforeTax;
+    private Double totalBeforeTax;
 
     @JsonProperty("Tax")
-    private float tax;
+    private Double tax;
 
     @JsonProperty("Total")
-    private float total;
+    private Double total;
 }

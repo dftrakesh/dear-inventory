@@ -81,7 +81,7 @@ public class Sale {
     private String salesRepresentative;
 
     @JsonProperty("ServiceOnly")
-    private boolean serviceOnly;
+    private Boolean serviceOnly;
 
     @JsonProperty("Carrier")
     private String carrier;

@@ -9,7 +9,7 @@ import lombok.Data;
 public class PackLine {
 
     @JsonProperty("ProductID")
-    private String productID;
+    private String productId;
 
     @JsonProperty("SKU")
     private String sku;
@@ -24,7 +24,7 @@ public class PackLine {
     private String box;
 
     @JsonProperty("Quantity")
-    private float quantity;
+    private Double quantity;
 
     @JsonProperty("Batch")
     private String batch;
@@ -33,7 +33,7 @@ public class PackLine {
     private String expiryDate;
 
     @JsonProperty("NonInventory")
-    private boolean nonInventory;
+    private Boolean nonInventory;
 
     @JsonProperty("WarrantyRegistrationNumber")
     private String warrantyRegistrationNumber;

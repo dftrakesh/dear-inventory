@@ -19,7 +19,7 @@ public class Order {
     private String status;
 
     @JsonProperty("Lines")
-    private List<SaleProduct> lines;
+    private List<SaleProduct> saleProductList;
 
     @JsonProperty("AdditionalCharges")
     private List<AdditionalCharges> additionalCharges;

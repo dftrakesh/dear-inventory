@@ -9,7 +9,7 @@ import lombok.Data;
 public class ShipLine {
 
     @JsonProperty("ID")
-    private String iD;
+    private String id;
 
     @JsonProperty("ShipmentDate")
     private String shipmentDate;

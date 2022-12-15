@@ -9,7 +9,7 @@ import lombok.Data;
 public class PickLine {
 
     @JsonProperty("ProductID")
-    private String productID;
+    private String productId;
 
     @JsonProperty("SKU")
     private String sku;
@@ -18,7 +18,7 @@ public class PickLine {
     private String name;
 
     @JsonProperty("Quantity")
-    private float quantity;
+    private Double quantity;
 
     @JsonProperty("Location")
     private String location;

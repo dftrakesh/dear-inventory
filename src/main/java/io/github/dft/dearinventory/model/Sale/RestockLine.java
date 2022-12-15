@@ -9,7 +9,7 @@ import lombok.Data;
 public class RestockLine {
 
     @JsonProperty("ProductID")
-    private String productID;
+    private String productId;
 
     @JsonProperty("SKU")
     private String sku;

@@ -9,10 +9,10 @@ import lombok.Data;
 public class Payments {
 
     @JsonProperty("ID")
-    private String iD;
+    private String id;
 
     @JsonProperty("TaskID")
-    private String taskID;
+    private String taskId;
 
     @JsonProperty("Reference")
     private String reference;

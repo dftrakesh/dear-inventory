@@ -13,5 +13,5 @@ public class Ship {
     private String status;
 
     @JsonProperty("Lines")
-    private List<ShipLine> lines;
+    private List<ShipLine> shipLineList;
 }
