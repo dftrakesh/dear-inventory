@@ -16,7 +16,7 @@ public class GetSaleList {
     private Integer page;
 
     @JsonProperty("SaleList")
-    private List<Sale> saleList;
+    private List<SaleList> saleList;
 
     @JsonProperty("ErrorCode")
     private String errorCode;

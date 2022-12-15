@@ -8,6 +8,8 @@ public interface ConstantCodes {
 
     String PRODUCT_LIST_END_POINT = "Products";
 
+    String SALE_END_POINT = "Sale";
+
     String API_AUTH_ACCOUNT_ID = "api-auth-accountid";
 
     String API_AUTH_APPLICATION_KEY = "api-auth-applicationkey";

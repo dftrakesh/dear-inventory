@@ -11,17 +11,8 @@ public class Sale {
     @JsonProperty("ID")
     private String id;
 
-    @JsonProperty("OrderNumber")
-    private String orderNumber;
-
     @JsonProperty("Status")
     private String status;
-
-    @JsonProperty("OrderDate")
-    private String orderDate;
-
-    @JsonProperty("InvoiceDate")
-    private String invoiceDate;
 
     @JsonProperty("Customer")
     private String customer;
@@ -29,20 +20,8 @@ public class Sale {
     @JsonProperty("CustomerID")
     private String customerId;
 
-    @JsonProperty("InvoiceNumber")
-    private String invoiceNumber;
-
     @JsonProperty("CustomerReference")
     private String customerReference;
-
-    @JsonProperty("InvoiceAmount")
-    private Double invoiceAmount;
-
-    @JsonProperty("PaidAmount")
-    private Double paidAmount;
-
-    @JsonProperty("InvoiceDueDate")
-    private String invoiceDueDate;
 
     @JsonProperty("ShipBy")
     private String shipBy;
@@ -53,33 +32,90 @@ public class Sale {
     @JsonProperty("CustomerCurrency")
     private String customerCurrency;
 
-    @JsonProperty("CreditNoteNumber")
-    private String creditNoteNumber;
+    @JsonProperty("Contact")
+    private String contact;
 
-    @JsonProperty("Updated")
-    private String updated;
+    @JsonProperty("Phone")
+    private String phone;
 
-    @JsonProperty("QuoteStatus")
-    private String quoteStatus;
+    @JsonProperty("Email")
+    private String email;
 
-    @JsonProperty("OrderStatus")
-    private String orderStatus;
+    @JsonProperty("DefaultAccount")
+    private String defaultAccount;
 
-    @JsonProperty("PickStatus")
-    private String pickStatus;
+    @JsonProperty("SkipQuote")
+    private Boolean skipQuote;
 
-    @JsonProperty("PackStatus")
-    private String packStatus;
+    @JsonProperty("TaxRule")
+    private String taxRule;
 
-    @JsonProperty("ShipStatus")
-    private String shipStatus;
+    @JsonProperty("TaxCalculation")
+    private String taxCalculation;
 
-    @JsonProperty("InvoiceStatus")
-    private String invoiceStatus;
+    @JsonProperty("Terms")
+    private String terms;
 
-    @JsonProperty("CreditNoteStatus")
-    private String creditNoteStatus;
+    @JsonProperty("PriceTier")
+    private String priceTier;
 
-    @JsonProperty("IsServiceOnlySale")
-    private boolean isServiceOnlySale;
+    @JsonProperty("Location")
+    private String location;
+
+    @JsonProperty("Created")
+    private String created;
+
+    @JsonProperty("LastModifiedOn")
+    private String lastModifiedOn;
+
+    @JsonProperty("Note")
+    private String note;
+
+    @JsonProperty("COGSAmount")
+    private Double cogsAmount;
+
+    @JsonProperty("CurrencyRate")
+    private Double currencyRate;
+
+    @JsonProperty("SalesRepresentative")
+    private String salesRepresentative;
+
+    @JsonProperty("ServiceOnly")
+    private Boolean serviceOnly;
+
+    @JsonProperty("Carrier")
+    private String carrier;
+
+    @JsonProperty("BillingAddress")
+    private Address billingAddress;
+
+    @JsonProperty("ShippingAddress")
+    private Address shippingAddress;
+
+    @JsonProperty("Quote")
+    private Quote quote;
+
+    @JsonProperty("Order")
+    private Order order;
+
+    @JsonProperty("Pick")
+    private Pick pick;
+
+    @JsonProperty("Pack")
+    private Pack pack;
+
+    @JsonProperty("Ship")
+    private Ship ship;
+
+    @JsonProperty("Invoice")
+    private Invoice invoice;
+
+    @JsonProperty("CreditNote")
+    private CreditNote creditNote;
+
+    @JsonProperty("AdditionalTransactions")
+    private AdditionalTransactions additionalTransactions;
+
+    @JsonProperty("AdditionalAttributes")
+    private AdditionalAttributes additionalAttributes;
 }

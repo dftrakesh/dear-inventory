@@ -2,6 +2,7 @@ package io.github.dft.dearinventory;
 
 import io.github.dft.dearinventory.handler.JsonBodyHandler;
 import io.github.dft.dearinventory.model.Sale.GetSaleList;
+import io.github.dft.dearinventory.model.Sale.Sale;
 import io.github.dft.dearinventory.model.auth.AccessCredential;
 import lombok.SneakyThrows;
 import org.apache.http.client.utils.URIBuilder;
@@ -14,6 +15,7 @@ import static io.github.dft.dearinventory.constantcode.ConstantCodes.BASE_END_PO
 import static io.github.dft.dearinventory.constantcode.ConstantCodes.CONTENT_TYPE;
 import static io.github.dft.dearinventory.constantcode.ConstantCodes.CONTENT_TYPE_VALUE;
 import static io.github.dft.dearinventory.constantcode.ConstantCodes.SALES_LIST_END_POINT;
+import static io.github.dft.dearinventory.constantcode.ConstantCodes.SALE_END_POINT;
 
 public class SalesAPI extends DearInventorySdk {
 
@@ -36,6 +38,22 @@ public class SalesAPI extends DearInventorySdk {
                                          .build();
 
         HttpResponse.BodyHandler<GetSaleList> handler = new JsonBodyHandler<>(GetSaleList.class);
+
+        return getRequestWrapped(request, handler);
+    }
+
+    @SneakyThrows
+    public Sale getSale(String saleId) {
+
+        URIBuilder uriBuilder = new URIBuilder(BASE_END_POINT + SALE_END_POINT + "/" + saleId);
+
+        HttpRequest request = HttpRequest.newBuilder(uriBuilder.build())
+            .header(API_AUTH_ACCOUNT_ID, accessCredential.getAccountId())
+            .header(API_AUTH_APPLICATION_KEY, accessCredential.getApplicationKey())
+            .header(CONTENT_TYPE, CONTENT_TYPE_VALUE)
+            .build();
+
+        HttpResponse.BodyHandler<Sale> handler = new JsonBodyHandler<>(Sale.class);
 
         return getRequestWrapped(request, handler);
     }

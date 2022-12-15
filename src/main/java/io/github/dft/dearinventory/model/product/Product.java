@@ -3,7 +3,6 @@ package io.github.dft.dearinventory.model.product;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-import java.time.LocalDateTime;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -13,7 +12,7 @@ public class Product {
     private String id;
 
     @JsonProperty("SKU")
-    private String sKU;
+    private String sku;
 
     @JsonProperty("Name")
     private String name;
@@ -49,7 +48,7 @@ public class Product {
     private Double weight;
 
     @JsonProperty("UOM")
-    private String uOM;
+    private String uom;
 
     @JsonProperty("Barcode")
     private String barcode;
@@ -93,8 +92,8 @@ public class Product {
     @JsonProperty("PriceTier10")
     private Double priceTier10;
 
-    @JsonProperty("PriceTiersObject")
-    private PriceTiers priceTiersObject;
+    @JsonProperty("PriceTiers")
+    private PriceTiers priceTiers;
 
     @JsonProperty("AverageCost")
     private Double averageCost;
@@ -148,7 +147,7 @@ public class Product {
     private String stockLocator;
 
     @JsonProperty("COGSAccount")
-    private String cOGSAccount;
+    private String cogsAccount;
 
     @JsonProperty("RevenueAccount")
     private String revenueAccount;
@@ -166,10 +165,10 @@ public class Product {
     private String saleTaxRule;
 
     @JsonProperty("LastModifiedOn")
-    private LocalDateTime lastModifiedOn;
+    private String lastModifiedOn;
 
     @JsonProperty("Sellable")
-    private boolean sellable;
+    private Boolean sellable;
 
     @JsonProperty("PickZones")
     private String pickZones;
