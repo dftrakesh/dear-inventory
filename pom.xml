@@ -10,6 +10,7 @@
     <packaging>jar</packaging>
 
 	<name>dear-inventory</name>
+    <description>dear-inventory API using JDK 11</description>
     <url>https://github.com/dftrakesh/dear-inventory</url>
 
     <licenses>
