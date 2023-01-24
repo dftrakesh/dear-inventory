@@ -3,6 +3,7 @@ package io.github.dft.dearinventory.model.product;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -49,6 +50,12 @@ public class Product {
 
     @JsonProperty("UOM")
     private String uom;
+
+    @JsonProperty("WeightUnits")
+    private String weightUnits;
+
+    @JsonProperty("DimensionsUnits")
+    private String dimensionsUnits;
 
     @JsonProperty("Barcode")
     private String barcode;
@@ -97,6 +104,12 @@ public class Product {
 
     @JsonProperty("AverageCost")
     private Double averageCost;
+
+    @JsonProperty("ShortDescription")
+    private String shortDescription;
+
+    @JsonProperty("InternalNote")
+    private String internalNote;
 
     @JsonProperty("Description")
     private String description;
@@ -172,4 +185,61 @@ public class Product {
 
     @JsonProperty("PickZones")
     private String pickZones;
+
+    @JsonProperty("CartonInnerQuantity")
+    private String cartonInnerQuantity;
+
+    @JsonProperty("BillOfMaterial")
+    private Boolean billOfMaterial;
+
+    @JsonProperty("AutoAssembly")
+    private Boolean autoAssembly;
+
+    @JsonProperty("AutoDisassembly")
+    private Boolean autoDisassembly;
+
+    @JsonProperty("QuantityToProduce")
+    private String quantityToProduce;
+
+    @JsonProperty("AssemblyInstructionURL")
+    private String assemblyInstructionURL;
+
+    @JsonProperty("AssemblyCostEstimationMethod")
+    private String assemblyCostEstimationMethod;
+
+    @JsonProperty("ReorderLevels")
+    private List<ReorderLevel> reorderLevelList;
+
+    @JsonProperty("BillOfMaterialsProducts")
+    private List<BillOfMaterialsProduct> billOfMaterialsProductList;
+
+    @JsonProperty("BillOfMaterialsServices")
+    private List<BillOfMaterialsService> billOfMaterialsServiceList;
+
+    @JsonProperty("Movements")
+    private List<Movement> movementList;
+
+    @JsonProperty("Attachments")
+    private List<Attachment> attachmentsList;
+
+    @JsonProperty("BOMType")
+    private String bomType;
+
+    @JsonProperty("WarrantyName")
+    private String warrantyName;
+
+    @JsonProperty("CustomPrices")
+    private List<CustomPrice> customPricesList;
+
+    @JsonProperty("CartonHeight")
+    private Double cartonHeight;
+
+    @JsonProperty("CartonWidth")
+    private Double cartonWidth;
+
+    @JsonProperty("CartonLength")
+    private Double cartonLength;
+
+    @JsonProperty("CartonQuantity")
+    private Double cartonQuantity;
 }

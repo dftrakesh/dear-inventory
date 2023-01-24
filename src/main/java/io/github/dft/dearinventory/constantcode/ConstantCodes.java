@@ -6,7 +6,7 @@ public interface ConstantCodes {
 
     String SALES_LIST_END_POINT = "SaleList";
 
-    String PRODUCT_LIST_END_POINT = "Products";
+    String PRODUCT_LIST_END_POINT = "v2/product";
 
     String SALE_END_POINT = "Sale";
 
