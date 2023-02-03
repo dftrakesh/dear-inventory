@@ -7,20 +7,11 @@ import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Ship {
+public class ManualJournals {
 
     @JsonProperty("Status")
-    private String status;
-
-    @JsonProperty("RequireBy")
-    private String requireBy;
-
-    @JsonProperty("ShippingAddress")
-    private Address shippingAddress;
-
-    @JsonProperty("ShippingNotes")
-    private String shippingNotes;
+    public String status;
 
     @JsonProperty("Lines")
-    private List<ShipLine> shipLineList;
+    public List<ManualJournalsLine> lines;
 }

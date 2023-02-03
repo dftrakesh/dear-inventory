@@ -9,8 +9,17 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CreditNote {
 
+    @JsonProperty("TaskID")
+    private String taskId;
+
     @JsonProperty("CreditNoteNumber")
     private String creditNoteNumber;
+
+    @JsonProperty("CreditNoteInvoiceNumber")
+    private String creditNoteInvoiceNumber;
+
+    @JsonProperty("CreditNoteConversionRate")
+    private String creditNoteConversionRate;
 
     @JsonProperty("Memo")
     private String memo;

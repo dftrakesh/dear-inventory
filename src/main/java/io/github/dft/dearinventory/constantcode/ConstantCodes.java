@@ -2,11 +2,11 @@ package io.github.dft.dearinventory.constantcode;
 
 public interface ConstantCodes {
 
-    String BASE_END_POINT = "https://inventory.dearsystems.com/ExternalApi/";
+    String BASE_END_POINT = "https://inventory.dearsystems.com/ExternalApi/v2/";
 
     String SALES_LIST_END_POINT = "SaleList";
 
-    String PRODUCT_LIST_END_POINT = "v2/product";
+    String PRODUCT_LIST_END_POINT = "product";
 
     String SALE_END_POINT = "Sale";
 
