@@ -2,7 +2,9 @@ package io.github.dft.dearinventory.model.Sale;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.github.dft.dearinventory.model.product.Attachment;
 import lombok.Data;
+import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -11,26 +13,14 @@ public class Sale {
     @JsonProperty("ID")
     private String id;
 
-    @JsonProperty("Status")
-    private String status;
-
     @JsonProperty("Customer")
     private String customer;
 
     @JsonProperty("CustomerID")
     private String customerId;
 
-    @JsonProperty("CustomerReference")
-    private String customerReference;
-
     @JsonProperty("ShipBy")
     private String shipBy;
-
-    @JsonProperty("BaseCurrency")
-    private String baseCurrency;
-
-    @JsonProperty("CustomerCurrency")
-    private String customerCurrency;
 
     @JsonProperty("Contact")
     private String contact;
@@ -47,6 +37,15 @@ public class Sale {
     @JsonProperty("SkipQuote")
     private Boolean skipQuote;
 
+    @JsonProperty("ShippingNotes")
+    private String shippingNotes;
+
+    @JsonProperty("BaseCurrency")
+    private String baseCurrency;
+
+    @JsonProperty("CustomerCurrency")
+    private String customerCurrency;
+
     @JsonProperty("TaxRule")
     private String taxRule;
 
@@ -62,8 +61,8 @@ public class Sale {
     @JsonProperty("Location")
     private String location;
 
-    @JsonProperty("Created")
-    private String created;
+    @JsonProperty("SaleOrderDate")
+    private String saleOrderDate;
 
     @JsonProperty("LastModifiedOn")
     private String lastModifiedOn;
@@ -71,8 +70,38 @@ public class Sale {
     @JsonProperty("Note")
     private String note;
 
+    @JsonProperty("CustomerReference")
+    private String customerReference;
+
     @JsonProperty("COGSAmount")
-    private Double cogsAmount;
+    private Double cOGSAmount;
+
+    @JsonProperty("Status")
+    private String status;
+
+    @JsonProperty("CombinedPickingStatus")
+    private String combinedPickingStatus;
+
+    @JsonProperty("CombinedPackingStatus")
+    private String combinedPackingStatus;
+
+    @JsonProperty("CombinedShippingStatus")
+    private String combinedShippingStatus;
+
+    @JsonProperty("FulFilmentStatus")
+    private String fulFilmentStatus;
+
+    @JsonProperty("CombinedInvoiceStatus")
+    private String combinedInvoiceStatus;
+
+    @JsonProperty("CombinedPaymentStatus")
+    private String combinedPaymentStatus;
+
+    @JsonProperty("CombinedTrackingNumbers")
+    private String combinedTrackingNumbers;
+
+    @JsonProperty("Carrier")
+    private String carrier;
 
     @JsonProperty("CurrencyRate")
     private Double currencyRate;
@@ -83,8 +112,8 @@ public class Sale {
     @JsonProperty("ServiceOnly")
     private Boolean serviceOnly;
 
-    @JsonProperty("Carrier")
-    private String carrier;
+    @JsonProperty("Type")
+    private String type;
 
     @JsonProperty("BillingAddress")
     private Address billingAddress;
@@ -92,30 +121,39 @@ public class Sale {
     @JsonProperty("ShippingAddress")
     private Address shippingAddress;
 
+    @JsonProperty("SourceChannel")
+    private String sourceChannel;
+
     @JsonProperty("Quote")
     private Quote quote;
 
     @JsonProperty("Order")
     private Order order;
 
-    @JsonProperty("Pick")
-    private Pick pick;
+    @JsonProperty("Fulfilments")
+    private List<Fulfilment> fulfilments;
 
-    @JsonProperty("Pack")
-    private Pack pack;
+    @JsonProperty("Invoices")
+    private List<Invoice> invoices;
 
-    @JsonProperty("Ship")
-    private Ship ship;
+    @JsonProperty("ManualJournals")
+    private ManualJournals manualJournals;
 
-    @JsonProperty("Invoice")
-    private Invoice invoice;
+    @JsonProperty("ExternalID")
+    private String externalID;
 
-    @JsonProperty("CreditNote")
-    private CreditNote creditNote;
-
-    @JsonProperty("AdditionalTransactions")
-    private AdditionalTransactions additionalTransactions;
+    @JsonProperty("CreditNotes")
+    private List<CreditNote> creditNotes;
 
     @JsonProperty("AdditionalAttributes")
     private AdditionalAttributes additionalAttributes;
+
+    @JsonProperty("Attachments")
+    private List<Attachment> attachments;
+
+    @JsonProperty("InventoryMovements")
+    private List<InventoryMovement> inventoryMovements;
+
+    @JsonProperty("Transactions")
+    private List<Transaction> transactions;
 }

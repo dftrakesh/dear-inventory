@@ -8,8 +8,8 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SaleList {
 
-    @JsonProperty("ID")
-    private String id;
+    @JsonProperty("SaleID")
+    private String saleId;
 
     @JsonProperty("OrderNumber")
     private String orderNumber;
@@ -65,21 +65,42 @@ public class SaleList {
     @JsonProperty("OrderStatus")
     private String orderStatus;
 
-    @JsonProperty("PickStatus")
-    private String pickStatus;
+    @JsonProperty("CombinedPickingStatus")
+    private String combinedPickingStatus;
 
-    @JsonProperty("PackStatus")
-    private String packStatus;
+    @JsonProperty("CombinedPaymentStatus")
+    private String combinedPaymentStatus;
 
-    @JsonProperty("ShipStatus")
-    private String shipStatus;
+    @JsonProperty("CombinedTrackingNumbers")
+    private String combinedTrackingNumbers;
 
-    @JsonProperty("InvoiceStatus")
-    private String invoiceStatus;
+    @JsonProperty("CombinedPackingStatus")
+    private String combinedPackingStatus;
+
+    @JsonProperty("CombinedShippingStatus")
+    private String combinedShippingStatus;
+
+    @JsonProperty("CombinedInvoiceStatus")
+    private String combinedInvoiceStatus;
 
     @JsonProperty("CreditNoteStatus")
     private String creditNoteStatus;
 
-    @JsonProperty("IsServiceOnlySale")
-    private Boolean isServiceOnlySale;
+    @JsonProperty("FulFilmentStatus")
+    private String fulFilmentStatus;
+
+    @JsonProperty("Type")
+    private String type;
+
+    @JsonProperty("SourceChannel")
+    private String sourceChannel;
+
+    @JsonProperty("ExternalID")
+    private String externalId;
+
+    @JsonProperty("OrderLocationID")
+    private String orderLocationId;
+
+    @JsonProperty("RestockStatus")
+    private String restockStatus;
 }

@@ -43,9 +43,10 @@ public class SalesAPI extends DearInventorySdk {
     }
 
     @SneakyThrows
-    public Sale getSale(String saleId) {
+    public Sale getSale(HashMap<String, String> params) {
 
-        URIBuilder uriBuilder = new URIBuilder(BASE_END_POINT + SALE_END_POINT + "/" + saleId);
+        URIBuilder uriBuilder = new URIBuilder(BASE_END_POINT + SALE_END_POINT);
+        addParameters(uriBuilder, params);
 
         HttpRequest request = HttpRequest.newBuilder(uriBuilder.build())
             .header(API_AUTH_ACCOUNT_ID, accessCredential.getAccountId())

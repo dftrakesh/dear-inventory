@@ -9,14 +9,29 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Invoice {
 
+    @JsonProperty("TaskID")
+    private String taskId;
+
     @JsonProperty("InvoiceNumber")
     private String invoiceNumber;
 
     @JsonProperty("Memo")
-    private String nemo;
+    private String memo;
 
     @JsonProperty("Status")
     private String status;
+
+    @JsonProperty("CurrencyConversionRate")
+    private String currencyConversionRate;
+
+    @JsonProperty("BillingAddressLine1")
+    private String billingAddressLine1;
+
+    @JsonProperty("BillingAddressLine2")
+    private String billingAddressLine2;
+
+    @JsonProperty("LinkedFulfillmentNumber")
+    private String linkedFulfillmentNumber;
 
     @JsonProperty("Lines")
     private List<InvoiceLine> invoiceLines;

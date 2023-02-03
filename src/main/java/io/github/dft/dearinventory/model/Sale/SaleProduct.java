@@ -49,4 +49,55 @@ public class SaleProduct {
 
     @JsonProperty("Total")
     private Double total;
+
+    @JsonProperty("ProductLength")
+    public Double productLength;
+
+    @JsonProperty("ProductWidth")
+    public Double productWidth;
+
+    @JsonProperty("ProductHeight")
+    public Double productHeight;
+
+    @JsonProperty("ProductWeight")
+    public Double productWeight;
+
+    @JsonProperty("WeightUnits")
+    public String weightUnits;
+
+    @JsonProperty("DimensionsUnits")
+    public String dimensionsUnits;
+
+    @JsonProperty("ProductCustomField1")
+    public String productCustomField1;
+
+    @JsonProperty("ProductCustomField2")
+    public String productCustomField2;
+
+    @JsonProperty("ProductCustomField3")
+    public String productCustomField3;
+
+    @JsonProperty("ProductCustomField4")
+    public String productCustomField4;
+
+    @JsonProperty("ProductCustomField5")
+    public String productCustomField5;
+
+    @JsonProperty("ProductCustomField6")
+    public String productCustomField6;
+
+    @JsonProperty("ProductCustomField7")
+    public String productCustomField7;
+
+    @JsonProperty("ProductCustomField8")
+    public String productCustomField8;
+
+    @JsonProperty("ProductCustomField9")
+    public String productCustomField9;
+
+    @JsonProperty("ProductCustomField10")
+    public String productCustomField10;
+
+    @JsonProperty("Account")
+    public String account;
 }
